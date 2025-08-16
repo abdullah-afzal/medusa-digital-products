@@ -27,7 +27,7 @@ import {
   
       const notificationData = await Promise.all(
         digitalProductOrder.products.map(async (product) => {
-          const medias = []
+          const medias = [] as string[]
       
           await Promise.all(
             product.medias
@@ -47,7 +47,7 @@ import {
       )
       
       const notification = await notificationModuleService.createNotifications({
-        to: digitalProductOrder.order.email,
+        to: digitalProductOrder?.order?.email as string,
         template: "digital-order-template",
         channel: "email",
         data: {

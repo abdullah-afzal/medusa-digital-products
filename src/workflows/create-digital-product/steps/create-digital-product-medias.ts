@@ -34,7 +34,7 @@ import {
         digital_product_medias: digitalProductMedias,
       })
     },
-    async ({ digital_product_medias }, { container }) => {
+    async ({ digital_product_medias }: any, { container }) => {
       const digitalProductModuleService: DigitalProductModuleService = 
         container.resolve(DIGITAL_PRODUCT_MODULE)
       

@@ -40,7 +40,7 @@ import {
         digital_product_order: digitalProductOrder,
       })
     },
-    async ({ digital_product_order }, { container }) => {
+    async ({ digital_product_order }: any, { container }) => {
       const digitalProductModuleService: DigitalProductModuleService = 
         container.resolve(DIGITAL_PRODUCT_MODULE)
   

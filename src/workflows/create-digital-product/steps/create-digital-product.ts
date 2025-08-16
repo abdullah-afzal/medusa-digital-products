@@ -24,7 +24,7 @@ import {
         digital_product: digitalProduct,
       })
     },
-    async ({ digital_product }, { container }) => {
+    async ({ digital_product }: any, { container }) => {
       const digitalProductModuleService: DigitalProductModuleService = 
         container.resolve(DIGITAL_PRODUCT_MODULE)
       

@@ -17,7 +17,7 @@ export default defineMiddlewares({
     {
       matcher: "/admin/digital-products/upload**",
       method: "POST",
-      middlewares: [upload.array("files")],
+      middlewares: [upload.array("files") as any],
     },
   ],
 });

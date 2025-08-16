@@ -65,7 +65,7 @@ import {
       )
     }
   
-    const fileData = await fileModuleService.retrieveFile(foundMedia.fileId)
+    const fileData = await fileModuleService.retrieveFile((foundMedia as any).fileId)
   
     res.json({
       url: fileData.url,
